@@ -1,0 +1,31 @@
+.exchange-block {
+  text-align: center;
+}
+
+label[for="currency-select"] {
+  color: #FFF;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+#currency-select {
+  height: 25px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.table-field {
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.currency-name {
+  font-weight: 700;
+}
+
+.rate {
+  font-weight: 500;
+  color: #f0145a;
+}

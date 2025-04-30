@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="converter-block">
+    <label for="rate-date">Оберіть дату:</label>
+    <input type="date" id="rate-date" max="9999-12-31">
+  
+    <label for="from-currency">Валюта з:</label>
+    <select id="from-currency"></select>
+  
+    <label for="to-currency">Валюта в:</label>
+    <select id="to-currency"></select>
+  
+    <label for="amount">Сума для конвертації:</label>
+    <input type="number" id="amount" min="0" step="0.01">
+  
+    <button id="convert-btn">Конвертувати</button>
+  
+    <div class="conversion-result"></div>
+  </div>
+  <template class="exchange-row">
+    <tr class="currency-row">
+        <td class="rate buy-rate table-field"></td>
+        <td class="currency-name table-field"></td>
+        <td class="rate sell-rate table-field"></td>
+    </tr>
+</template>
+<script src="./script.js"></script>
+</body>
+</html>

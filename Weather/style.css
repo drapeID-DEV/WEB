@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.map-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  width: 512px;
+  height: 512px;
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  position: relative;
+}
+
+.map-tile {
+  width: 256px;
+  height: 256px;
+}
+
+.map-radar-layer {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.data-form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input[type=text]{
+  width: 300px;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.2rem;
+  margin-top: 0.25rem;
+}
+
+label {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.input-container-errors {
+  font-size: 18px;
+  color: red;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
